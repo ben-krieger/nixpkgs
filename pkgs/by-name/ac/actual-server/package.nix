@@ -72,7 +72,7 @@ in
       export HOME=$(mktemp -d)
 
       yarn build:server
-      yarn workspace @actual-app/sync-server build
+      yarn workspace @actual-app/sync-server build --mode production
 
       runHook postBuild
     '';
